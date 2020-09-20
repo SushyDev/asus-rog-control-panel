@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Navigation</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/root.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="../js/nav.js" defer></script>
+    <script src="../js/content.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+    <script src="../js/require.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <button onclick="drawer()" class="">
+            <span class="material-icons">menu</span>
+        </button>
+
+        <h2>ASUS ROG CONTROL PANEL</h2>
+
+    </div>
+
+    <div class="body">
+
+        <nav class="nav" id="nav">
+            <div class="pages" id="pages">
+                <ul>
+                    <li onclick="goto('home')">
+                        <div class="icon">
+                            <span class="material-icons">home</span>
+                        </div>
+                        <div class="text">
+                            <p>HOME</p>
+                        </div>
+                    </li>
+                    <li onclick="goto('nvprime')">
+                        <div class="icon">
+                            <span class="material-icons">desktop_windows</span>
+                        </div>
+                        <div class="text">
+                            <p>NVIDIA PRIME</p>
+                        </div>
+                    </li>
+                    <li onclick="goto('power')">
+                        <div class="icon">
+                            <span class="material-icons">battery_charging_full</span>
+                        </div>
+                        <div class="text">
+                            <p>Power Profiles</p>
+                        </div>
+                    </li>
+                    <li onclick="goto('kbled')">
+                        <div class="icon">
+                            <span class="material-icons">keyboard</span>
+                        </div>
+                        <div class="text">
+                            <p>KEYBOARD LED</p>
+                        </div>
+                    </li>
+                    <li onclick="goto('settings')">
+                        <div class="icon">
+                            <span class="material-icons">settings</span>
+                        </div>
+                        <div class="text">
+                            <p>SETTINGS</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="main" id="main">
+           
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+/* Header style */
+
+.header {
+    height: 55px;
+    width: 100%;
+    background: var(--primary-color);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    -webkit-app-region: drag;
+}
+
+/* Header burger menu button style */
+
+.header button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin-left: 15px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+/* Header button burger icon styling */
+
+.header button span {
+    font-size: 35px;
+    color: white;
+}
+
+/* Header text styling */
+
+.header h2 {
+    color: white;
+    margin-left: 15px;
+}
+
+/* Display the body under the header in flex so the navigation drawer is next to the content */
+
+.body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+/*Main content next to the navigation drawer */
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: var(--body-color);
+    color: var(--color);
+}
+
+.main * {
+    margin: 10px;
+}

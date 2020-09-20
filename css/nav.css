@@ -1,0 +1,94 @@
+/* left navbar */
+
+.nav {
+    position: relative;
+    width: 65px;
+    height: 100%;
+    background-color: var(--nav-bg);
+    overflow: hidden;
+    transition: width 0.25s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* increase navbar size on active */
+.nav-active {
+    width: 375px;
+}
+
+.nav .pages {
+    height: 100%;
+    margin-top: 10px;
+}
+
+a {
+    all: none !important;
+}
+
+.nav .pages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav .pages ul li {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.nav .pages ul li:hover {
+    background-color: var(--nav-item-hover);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+/* icon div in the list to hold the icon in the center */
+
+.nav .pages li .icon {
+    min-width: 50px;
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+/*Icon styles*/
+
+.nav .pages li .icon span {
+    color: var(--nav-item-color);
+    font-size: 40px;
+}
+
+/* text div in the list to hold the text in the center */
+
+.nav .pages li .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 2px;
+}
+
+/* text styles */
+
+.nav .pages li p {
+    font-size: 20px;
+    color: var(--nav-item-color);
+    margin-left: 5px;
+    overflow: hidden;
+    white-space:nowrap;
+}
+
+.nav .pages li:nth-last-child(1) {
+    margin-top: auto;
+}
