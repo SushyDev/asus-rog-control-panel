@@ -6,4 +6,4 @@ Please do not compile and use this yourself unless you know exactly what you're 
 
 If you do decide to run this dont hold my accountable for any data loss / broken laptops
 
-Linux only because windows sucks
+### Linux only because windows sucks
